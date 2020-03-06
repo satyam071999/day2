@@ -1,0 +1,90 @@
+import java.util.ArrayList;
+
+//1
+public final class Person {
+   private final String name;
+   private final LocalDate dob;
+   private final List<String> hobbies;
+   public Person(String name,LocalDate dob,List<String> hobbies )
+   {
+	   this.name=name;
+	   this.dob=dob;
+	   this.hobbies=hobbies;
+   }
+   
+   public String getname()
+   {
+	   return this.name;
+   }
+   
+}
+///
+//2
+List<String> str;
+double k=0;
+int count=1;
+double k=str.stream().map(str->str.split(",").filter(s-> {
+	
+ return Integer.parseInt(s[1])>22 && (Integer.parseInt)s[1]<30;
+}
+).map(s-> Integer.parseInt(s[3])).average().foreach(System.out.println());
+
+//4
+
+//list=[10,20,30,40,50,10]
+List<Integer> li=list.stream()
+.distinct()
+.collect(Collectors.toList());
+
+//3
+class Employee
+{
+	int emp_id;
+	int experience;
+	int dept_id;
+	Employee()
+	{
+		
+	}
+}
+class Department
+{
+	int dept_id;
+}
+
+Employee emp1=new Employee();
+Employee emp2=new Employee();
+Employee emp3=new Employee();
+Employee emp4=new Employee();
+ArrayList<Employee> list=new ArrayList<Employee>();
+
+list.add(emp1)
+//emp2,emp3
+Comparator<Employee> compare = Comparator
+.comparing(Employee::dept_id)
+.thenComparing(Employee::experience).reversed
+.comparing(Employee::name);
+List<Employee> li=list.stream().sorted(compare).collect((Collectors.toList());
+ //5
+ public final class Account
+ {
+	 private final int acc_id;
+	 private final int acc_balance;
+	
+ }
+ public class User
+ {
+	 int user_id;
+	 int acc_id; 
+ }
+ Comparator<Account> compare = Comparator
+		 .comparing(User::user_id_)
+		 .thenComparing(Account:: acc_balance);
+ 
+ List<Account> li=list.stream().sorted(compare).collect((Collectors.toList());
+
+
+
+
+
+
